@@ -1,0 +1,34 @@
+引脚接线备注：
+    OLED
+      D0--PB12
+      D1--PB13
+      RES--PB14
+      DC--PB15
+      CS--接地
+    TB6612
+      PWMA--PA1
+      AIN2--PB11
+      AIN1--PB10
+      STBY--PA12
+      BIN1--PA11
+      BIN2--PA10
+      PWMB--PA0
+      AO1--M1(红的)
+      AO2--M2(白的)
+    编码器接口
+      PA7/PA6
+      PA8/PA9
+    MPU6050
+      SCL--PB6
+      SDA--PB7
+      XDA/XCL--不接
+      AD0--可接地
+      INT--PB8
+    HC-06
+      RX--UART_TX PA2
+      TX--UART_RX PA3
+    PS2
+      CLK--PB5
+      CS/SEL--PB5
+      DO/CMD--PB3
+      DI--PA15
