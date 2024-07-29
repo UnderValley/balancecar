@@ -1,12 +1,17 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
     ui->sliderKP->setRange(0, 99);
+
+    localDevice = new QBluetoothLocalDevice();
+//    qDebug() << (localDevice->isValid());
+//    discoveryAgent= new QBluetoothDeviceDiscoveryAgent();
 }
 
 MainWindow::~MainWindow()

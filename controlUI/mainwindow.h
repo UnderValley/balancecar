@@ -2,6 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QtBluetooth/QBluetoothLocalDevice>
+#include <QtBluetooth/QBluetoothServer>
+#include <QtBluetooth/QBluetoothSocket>
+#include <QtBluetooth/QBluetoothDeviceDiscoveryAgent>
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +21,8 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QBluetoothLocalDevice *localDevice;
+    QBluetoothDeviceDiscoveryAgent *discoveryAgent;
 
 public slots:
     void GoForward();
